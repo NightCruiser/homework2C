@@ -14,8 +14,8 @@
 int main( int argc, char *argv[] ) {
 
     int LowestAvailableInputAmount = 0 ; // it will be used also for loops.
-    int Limit = 100 ;
-    int UserInputNumbersAmount = 0 ;
+    int Limit = 100 ;                    //we don't use #define because of task
+    int UserInputNumbersAmount = 0 ;     //we don't use dynamic arrays because of task
     int ArrayOfNumbers[100] ;
 
 
