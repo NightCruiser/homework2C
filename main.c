@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *This programm asks from user to input any amount of integers.
+ *This program asks from user to input any amount of integers.
  *Limit of integers is 100. Integers, that was recieved from User
  *will be stored in an array sized sizeof(int) * 100.
  *User enters the amount he wants and then numbers directly from keyboard one by one.
