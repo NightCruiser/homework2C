@@ -13,13 +13,13 @@
  */
 int main( int argc, char *argv[] ) {
 
-    int LowestAvailableInputAmount = 0 ;
+    int LowestAvailableInputAmount = 0 ; // it will be used also for loops.
     int Limit = 100 ;
     int UserInputNumbersAmount = 0 ;
     int ArrayOfNumbers[100] ;
 
 
-    printf( "How much number would you like to enter? (max100)\n" ) ;
+    printf( "How much number would you like to enter? (max100):\n" ) ;
     scanf( "%d", &UserInputNumbersAmount ) ;
     if ( UserInputNumbersAmount < LowestAvailableInputAmount ) {
         printf( "Invalid Amount\n" ) ;
@@ -40,7 +40,7 @@ int main( int argc, char *argv[] ) {
 
     LowestAvailableInputAmount = 0 ; // This variable becomes 0 again after the while-loop is completed.
     printf( "Your numbers are: " ) ;
-    //This while loop outputs users numbers divided by ",".
+    //This while loop outputs user's numbers divided by ",".
     while ( LowestAvailableInputAmount < UserInputNumbersAmount ) {
         int step = 1 ;
         printf( "%d, ", ArrayOfNumbers[LowestAvailableInputAmount] ) ;
