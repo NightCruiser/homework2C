@@ -18,7 +18,6 @@ int main( int argc, char *argv[] ) {
     int UserInputNumbersAmount = 0 ;     //we don't use dynamic arrays because of task
     int ArrayOfNumbers[100] ;
 
-
     printf( "How much number would you like to enter? (max100):\n" ) ;
     scanf( "%d", &UserInputNumbersAmount ) ;
     if ( UserInputNumbersAmount < LowestAvailableInputAmount ) {
@@ -28,6 +27,10 @@ int main( int argc, char *argv[] ) {
     if ( UserInputNumbersAmount > Limit ) {
         printf( "The limit of numbers is %d\n", Limit ) ;
         return -2 ;
+    }
+    if ( UserInputNumbersAmount == 0 ) {
+        printf( "You have decided not to enter any numbers.\nThanks for using!\n" ) ;
+        return 0 ;
     }
 
     //While loop that fulfill an array ArrayOfNumbers
@@ -39,6 +42,12 @@ int main( int argc, char *argv[] ) {
     }
 
     LowestAvailableInputAmount = 0 ; // This variable becomes 0 again after the while-loop is completed.
+
+    if ( UserInputNumbersAmount == 1 ) {
+        printf("Your number is: %d.\nThanks for using!\n", ArrayOfNumbers[LowestAvailableInputAmount] );
+        return 0 ;
+    }
+
     printf( "Your numbers are: " ) ;
     //This while loop outputs user's numbers divided by ",".
     while ( LowestAvailableInputAmount < UserInputNumbersAmount ) {
