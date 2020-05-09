@@ -16,7 +16,6 @@ int main( int argc, char *argv[] ) {
     int LowestAvailableInputAmount = 0 ; // it will be used also for loops.
     int Limit = 100 ;                    //we don't use #define because of task
     int UserInputNumbersAmount = 0 ;     //we don't use dynamic arrays because of task
-    int ArrayOfNumbers[100] ;
 
     printf( "How much number would you like to enter? (max100):\n" ) ;
     scanf( "%d", &UserInputNumbersAmount ) ;
@@ -32,6 +31,8 @@ int main( int argc, char *argv[] ) {
         printf( "You have decided not to enter any numbers.\nThanks for using!\n" ) ;
         return 0 ;
     }
+
+    int ArrayOfNumbers[100] ;
 
     //While loop that fulfill an array ArrayOfNumbers
     while ( LowestAvailableInputAmount < UserInputNumbersAmount ) {
